@@ -51,7 +51,7 @@ useEffect (() => {
     <div>
           <Navbar/>
        { loading ? (  <div className='mt-10 lg:mx-[200px] items-center justify-center '>
-        <h1 className='text-white font-bold text-center animate-pulse'>Loading....</h1>
+        <h1 className='text-white font-bold text-center animate-bounce text-3xl'>Loading....</h1>
                 </div>
        )
       :(     <div className='mt-10 lg:mx-[100px] mx-10 '>
@@ -59,7 +59,7 @@ useEffect (() => {
        <h1 className="font-bold text-4xl text-center text-white ">Client side fetching</h1>  
        <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-10'>
          {data.map((Products ,index)=> (
-             <div key={index} className='flex flex-col rounded shadow-md p-4 bg-white gap-3'>
+             <div key={index} className='flex flex-col rounded shadow-md md:p-4 sm:p-2 bg-white gap-3'>
                <div className= ' lg:w-full h-48 relative mb-5'>
                <Image
                  src={Products.image}
@@ -70,7 +70,7 @@ useEffect (() => {
                   />
                </div>
                <p className='first-letter:uppercase '>{Products.category}</p>
-               <p className='font-bold text-xl mb-3 text-black '>{Products.title}</p>
+               <p className='font-bold md:text-xl mb-3 text-black '>{Products.title}</p>
                 <p className='text-black text-opacity-50'>{Products.description}</p>
                 <p className='font-bold text-xl'>${Products.price}</p>
 
