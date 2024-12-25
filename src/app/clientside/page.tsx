@@ -28,7 +28,7 @@ useEffect (() => {
        setTimeout (() =>{
         setloading(false);
     
-    }, 4000)
+    }, 5000)
    
   const fetchapi = async () => {
     const response = await fetch("https://fakestoreapi.com/products");  
