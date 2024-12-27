@@ -50,7 +50,8 @@ useEffect (() => {
   return (
     <div>
           <Navbar/>
-       { loading ? (  <div className='mt-10 lg:mx-[200px] items-center justify-center '>
+       { loading ? (  
+        <div className='mt-10 lg:mx-[200px] items-center justify-center'>
         <h1 className='text-white font-bold text-center animate-bounce text-3xl'>Loading....</h1>
                 </div>
        )
